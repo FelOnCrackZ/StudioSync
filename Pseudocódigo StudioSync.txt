@@ -1,0 +1,35 @@
+PROCESO registrar_archivo_de_audio(file_data, project_repository)
+
+  intentos ← 0
+  MIENTRAS intentos < MAX_INTENTOS HACER
+    SI campos_completos(file_data) ENTONCES
+      romper ciclo
+    FIN SI
+    intentos ← intentos + 1
+    SI intentos = MAX_INTENTOS ENTONCES
+      retornar Error("Campos incompletos")
+    FIN SI
+  FIN MIENTRAS
+
+  SI NOT formato_valido(file_data.format) ENTONCES
+    retornar Error("Formato no soportado")
+  FIN SI
+
+  hash ← calcular_hash(file_data.simulated_content)
+
+  SI hash_existe_en_proyecto(hash, project_repository, file_data.project_id) ENTONCES
+    retornar Aviso("Archivo duplicado — ya existe esta versión exacta")
+  FIN SI
+
+  bpm ← convertir_a_numero(file_data.bpm_str)
+  SI bpm < 40 O bpm > 300 ENTONCES
+    retornar Error("BPM fuera de rango válido: 40–300")
+  FIN SI
+
+  version ← calcular_nueva_version(project_repository, file_data.project_id, file_data.name)
+  record  ← { id, name, format, bpm, version, hash, project_id, timestamp, status }
+
+  guardar record en project_repository[project_id]
+  retornar record
+
+FIN PROCESO
