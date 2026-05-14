@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudioSync — Version Control for Music</title>
+  <meta name="description" content="StudioSync es la plataforma SaaS de gestión de activos digitales para productores musicales independientes. Control de versiones, hash de integridad y colaboración remota." />
+  <meta name="keywords" content="StudioSync, producción musical, SaaS, control de versiones, audio, DAW, Colombia, beatmakers" />
+  <meta name="author" content="Felipe Nuñez Navarro, Jorge Humberto Leyes Rojas" />
+  <meta property="og:title" content="StudioSync — Version Control for Music" />
+  <meta property="og:description" content="El repositorio definitivo para tu sonido. Gestiona, versiona y protege tus archivos de audio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/logo.png" />
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#hero">
+      <img src="img/logo.png" alt="StudioSync logo — Version Control for Music" />
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#producto">Producto</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#precios">Precios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#precios" class="btn btn-ghost">Ver planes</a>
+      <a href="#contacto" class="btn btn-primary">Empezar gratis</a>
+    </div>
+    <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" role="dialog" aria-label="Menú móvil">
+  <a href="#producto">Producto</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#precios">Precios</a>
+  <a href="#contacto">Contacto</a>
+  <a href="#contacto" class="btn btn-primary btn-lg" style="text-align:center">Empezar gratis</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" aria-label="Inicio">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <div class="hero-dot" aria-hidden="true"></div>
+          <span class="tag">SaaS · Audio · Colombia</span>
+        </div>
+        <h1 class="hero-title">
+          El repositorio<br/>
+          definitivo para<br/>
+          <span class="accent-teal">tu</span> <span class="accent-purple">sonido.</span>
+        </h1>
+        <p class="hero-desc">
+          StudioSync es la plataforma de control de versiones diseñada para productores musicales independientes. Integridad de archivos, versionado semántico y colaboración remota, sin complicaciones.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary btn-lg">Empezar gratis &rarr;</a>
+          <a href="#producto" class="btn btn-outline btn-lg">Ver cómo funciona</a>
+        </div>
+        <div class="hero-stats" role="list">
+          <div role="listitem">
+            <div class="hero-stat-val">SHA-256</div>
+            <div class="hero-stat-label">Hash de integridad</div>
+          </div>
+          <div role="listitem">
+            <div class="hero-stat-val">v1.0&rarr;v2.0</div>
+            <div class="hero-stat-label">Versionado semántico</div>
+          </div>
+          <div role="listitem">
+            <div class="hero-stat-val">6+</div>
+            <div class="hero-stat-label">Formatos soportados</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-orbit"><div class="orbit-dot"></div></div>
+        <div class="hero-orbit-2"><div class="orbit-dot-2"></div></div>
+        <div class="hero-logo-wrap">
+          <img src="img/logo.png" alt="StudioSync — repositorio de audio" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider" aria-hidden="true"></div>
+
+<!-- PRODUCTO -->
+<section id="producto" aria-labelledby="producto-title">
+  <div class="container">
+    <div class="features-header reveal">
+      <p class="section-label">Funcionalidades</p>
+      <h2 class="section-title" id="producto-title">Engineered for producers,<br/>not just musicians.</h2>
+      <p class="section-sub">Cada función resuelve un problema real del flujo de trabajo del productor independiente latinoamericano.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal" data-delay="0">
+        <div class="feature-icon fi-teal" aria-hidden="true">🔐</div>
+        <h3>Hash SHA-256 de Integridad</h3>
+        <p>Cada archivo subido genera una huella digital única. Garantiza que lo que subiste es exactamente lo que se recibe, bit a bit. Ideal para entregas a masterización.</p>
+      </div>
+      <div class="feature-card reveal" data-delay="80">
+        <div class="feature-icon fi-purple" aria-hidden="true">📋</div>
+        <h3>Versionado Semántico</h3>
+        <p>Olvídate de <code style="color:var(--coral);font-size:0.8rem">Mezcla_Final_v2_corregida.wav</code>. StudioSync asigna versiones automáticas: v1.0 → v1.1 → v2.0 con historial completo.</p>
+      </div>
+      <div class="feature-card reveal" data-delay="160">
+        <div class="feature-icon fi-coral" aria-hidden="true">🎧</div>
+        <h3>Reproductor A/B</h3>
+        <p>Compara dos versiones de una mezcla en tiempo real desde el navegador, sin descargar nada. Alterna entre versiones con un clic sincronizado.</p>
+      </div>
+      <div class="feature-card reveal" data-delay="0">
+        <div class="feature-icon fi-amber" aria-hidden="true">🎛️</div>
+        <h3>Gestión de Stems</h3>
+        <p>Organización automática de pistas individuales por tipo. Metadatos como BPM y formato extraídos automáticamente al subir.</p>
+      </div>
+      <div class="feature-card reveal" data-delay="80">
+        <div class="feature-icon fi-blue" aria-hidden="true">🔗</div>
+        <h3>Colaboración Remota</h3>
+        <p>Comparte proyectos con beatmakers en Bogotá, Medellín o Miami. Permisos por rol: oyente, editor o administrador.</p>
+      </div>
+      <div class="feature-card reveal" data-delay="160">
+        <div class="feature-icon fi-green" aria-hidden="true">📊</div>
+        <h3>Detección de Duplicados</h3>
+        <p>Si subes el mismo archivo dos veces, StudioSync lo detecta por su hash y te avisa. Tu almacenamiento se usa solo para versiones realmente distintas.</p>
+      </div>
+    </div>
+    <div class="mockup-wrap reveal" style="margin-top:60px">
+      <div class="mockup-bar">
+        <div class="mockup-dot md-red" aria-hidden="true"></div>
+        <div class="mockup-dot md-yellow" aria-hidden="true"></div>
+        <div class="mockup-dot md-green" aria-hidden="true"></div>
+        <span class="mockup-title">studiosync — terminal</span>
+      </div>
+      <div class="mockup-body" style="max-height:260px;overflow:hidden" aria-label="Demostración de terminal StudioSync" role="log" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider" aria-hidden="true"></div>
+
+<!-- NOSOTROS -->
+<section id="nosotros" aria-labelledby="nosotros-title">
+  <div class="container">
+    <div class="about-inner">
+      <div>
+        <p class="section-label reveal">Acerca de nosotros</p>
+        <h2 class="section-title reveal" id="nosotros-title">Construido por estudiantes que producen música.</h2>
+        <p class="section-sub reveal" style="max-width:100%">StudioSync nació en la Universidad del Valle, Seccional Zarzal, como respuesta a un problema real: los productores independientes del Valle del Cauca no tienen herramientas profesionales para gestionar sus activos digitales.</p>
+        <div class="about-mission reveal">
+          <p>Nuestra misión es cerrar la brecha entre la sofisticación creativa del productor independiente latinoamericano y la precariedad de sus herramientas de gestión de información.</p>
+        </div>
+        <div class="pillars reveal">
+          <div class="pillar">
+            <div class="pillar-icon" aria-hidden="true">🧠</div>
+            <div>
+              <h4>Gestión del Conocimiento</h4>
+              <p>Transformamos datos crudos (audio) en conocimiento estructurado: metadatos, BPM, versiones y estado del proyecto.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon" aria-hidden="true">🌐</div>
+            <div>
+              <h4>Innovación Abierta</h4>
+              <p>Colaboración entre productores de distintas ciudades para generar productos culturales de mayor valor global.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon" aria-hidden="true">📈</div>
+            <div>
+              <h4>Madurez Digital</h4>
+              <p>Reducimos la "deuda técnica" del productor independiente para que pueda competir con estándares internacionales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="section-label reveal">El equipo</p>
+        <div class="team-grid">
+          <div class="team-card reveal" data-delay="0">
+            <div class="team-avatar av-purple" aria-hidden="true">FN</div>
+            <h4>Felipe Nuñez Navarro</h4>
+            <p class="role">Frontend &amp; UX</p>
+            <p>Estudiante de TDS, apasionado por el diseño de interfaces y la producción musical con FL Studio y Ableton.</p>
+            <div class="team-social"><a href="https://www.linkedin.com/company/studiosync-co" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+          </div>
+          <div class="team-card reveal" data-delay="100">
+            <div class="team-avatar av-teal" aria-hidden="true">JL</div>
+            <h4>Jorge Humberto Leyes Rojas</h4>
+            <p class="role">Backend &amp; Algoritmia</p>
+            <p>Estudiante de TDS, enfocado en sistemas de integridad de datos, hashing y control de versiones para binarios.</p>
+            <div class="team-social"><a href="https://www.linkedin.com/company/studiosync-co" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+          </div>
+        </div>
+        <div class="team-card reveal" style="margin-top:20px;text-align:left;padding:24px 28px">
+          <p class="section-label" style="margin-bottom:8px">Universidad</p>
+          <h4 style="font-family:var(--font-display);font-weight:700;margin-bottom:6px">Universidad del Valle</h4>
+          <p style="font-size:0.85rem;color:var(--muted)">Seccional Zarzal · Facultad de Ingeniería<br/>Tecnología en Desarrollo de Software (NOC-2724)<br/>Taller de Habilidades Informáticas — 2026</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider" aria-hidden="true"></div>
+
+<!-- PRECIOS -->
+<section id="precios" aria-labelledby="precios-title">
+  <div class="container">
+    <div class="pricing-header reveal">
+      <p class="section-label">Planes</p>
+      <h2 class="section-title" id="precios-title">Precio justo para cada productor.</h2>
+      <p class="section-sub" style="margin:0 auto">Desde el beatmaker que empieza hasta el estudio profesional.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card reveal" data-delay="0">
+        <p class="price-name">Solo Artist</p>
+        <div class="price-amount">
+          <span class="price-currency">$</span>
+          <span class="price-number">0</span>
+        </div>
+        <p class="price-period">Para siempre</p>
+        <p class="price-storage">📦 5 GB de almacenamiento</p>
+        <ul class="price-features" aria-label="Características plan gratuito">
+          <li class="pf">Hash SHA-256 de integridad</li>
+          <li class="pf">Versionado semántico básico</li>
+          <li class="pf">Hasta 3 proyectos activos</li>
+          <li class="pf">Formatos .WAV y .AIFF</li>
+          <li class="pf off">Reproductor A/B</li>
+          <li class="pf off">Colaboración en equipo</li>
+          <li class="pf off">Gestión de stems automática</li>
+        </ul>
+        <button class="btn-plan btn-plan-ghost" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Empezar gratis</button>
+      </div>
+      <div class="price-card featured reveal" data-delay="100">
+        <div class="price-badge" aria-label="Plan más popular">Más popular</div>
+        <p class="price-name">Studio Pro</p>
+        <div class="price-amount">
+          <span class="price-currency">$</span>
+          <span class="price-number" style="color:var(--purple)">25</span>
+        </div>
+        <p class="price-period">USD / mes</p>
+        <p class="price-storage">📦 50 GB de almacenamiento</p>
+        <ul class="price-features" aria-label="Características plan Studio Pro">
+          <li class="pf">Todo lo del plan gratuito</li>
+          <li class="pf">Reproductor A/B en tiempo real</li>
+          <li class="pf">Hasta 20 proyectos activos</li>
+          <li class="pf">Todos los formatos (+ .mp3, .als, .flp)</li>
+          <li class="pf">Gestión de stems automática</li>
+          <li class="pf">Hasta 3 colaboradores por proyecto</li>
+          <li class="pf off">API de integración DAW</li>
+        </ul>
+        <button class="btn-plan btn-plan-primary" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Elegir Studio Pro</button>
+      </div>
+      <div class="price-card reveal" data-delay="200">
+        <p class="price-name">Label</p>
+        <div class="price-amount">
+          <span class="price-currency">$</span>
+          <span class="price-number">60</span>
+        </div>
+        <p class="price-period">USD / mes</p>
+        <p class="price-storage">📦 500 GB + almacenamiento extra</p>
+        <ul class="price-features" aria-label="Características plan Label">
+          <li class="pf">Todo lo del plan Pro</li>
+          <li class="pf">Proyectos y colaboradores ilimitados</li>
+          <li class="pf">API de integración con DAWs</li>
+          <li class="pf">Panel de administración de equipo</li>
+          <li class="pf">Reportes automáticos de sesiones</li>
+          <li class="pf">Soporte prioritario 24/7</li>
+          <li class="pf">Facturación en COP disponible</li>
+        </ul>
+        <button class="btn-plan btn-plan-ghost" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Contactar ventas</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider" aria-hidden="true"></div>
+
+<!-- CONTACTO -->
+<section id="contacto" aria-labelledby="contacto-title">
+  <div class="container">
+    <div class="contact-inner">
+      <div>
+        <p class="section-label reveal">Contacto</p>
+        <h2 class="section-title reveal" id="contacto-title">Hablemos de tu próximo proyecto.</h2>
+        <p class="reveal" style="color:var(--muted);font-size:0.95rem;line-height:1.8;margin-bottom:36px">¿Tienes preguntas sobre StudioSync, quieres ser beta tester o simplemente quieres saber más? Escríbenos.</p>
+        <div class="contact-links reveal">
+          <a class="contact-link" href="mailto:studiosync.co@gmail.com" aria-label="Correo StudioSync">
+            <div class="contact-link-icon fi-teal" aria-hidden="true">📧</div>
+            studiosync.co@gmail.com
+          </a>
+          <a class="contact-link" href="https://www.instagram.com/studiosync.co" target="_blank" rel="noopener" aria-label="Instagram StudioSync">
+            <div class="contact-link-icon fi-purple" aria-hidden="true">📸</div>
+            @studiosync.co — Instagram
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/company/studiosync-co" target="_blank" rel="noopener" aria-label="LinkedIn StudioSync">
+            <div class="contact-link-icon fi-blue" aria-hidden="true">💼</div>
+            StudioSync · LinkedIn
+          </a>
+          <a class="contact-link" href="https://github.com/studiosync-co" target="_blank" rel="noopener" aria-label="GitHub StudioSync">
+            <div class="contact-link-icon fi-green" aria-hidden="true">🐙</div>
+            github.com/studiosync-co
+          </a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <form id="contactForm" novalidate aria-label="Formulario de contacto">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="given-name" />
+              <span class="field-error" id="nombreError" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo *</label>
+              <input type="email" id="email" name="email" placeholder="tu@correo.com" autocomplete="email" />
+              <span class="field-error" id="emailError" role="alert" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="plan">Plan de interés *</label>
+            <select id="plan" name="plan">
+              <option value="">Selecciona un plan...</option>
+              <option value="free">Solo Artist — Gratis</option>
+              <option value="pro">Studio Pro — $25 USD/mes</option>
+              <option value="label">Label — $60 USD/mes</option>
+              <option value="otro">Solo tengo preguntas</option>
+            </select>
+            <span class="field-error" id="planError" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+            <span class="field-error" id="mensajeError" role="alert" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg form-submit">Enviar mensaje &rarr;</button>
+        </form>
+        <div class="form-success" aria-live="assertive">
+          <div class="success-icon" aria-hidden="true">🎵</div>
+          <h3>¡Mensaje recibido!</h3>
+          <p>Gracias por escribirnos. Te contactaremos pronto. Mientras tanto, síguenos en <strong>@studiosync.co</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="img/logo.png" alt="StudioSync" />
+        <p>El repositorio definitivo para tu sonido. Version control para productores musicales independientes.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Producto</h5>
+        <ul role="list">
+          <li><a href="#producto">Funcionalidades</a></li>
+          <li><a href="#precios">Planes</a></li>
+          <li><a href="#producto">Cómo funciona</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Empresa</h5>
+        <ul role="list">
+          <li><a href="#nosotros">Acerca de</a></li>
+          <li><a href="#nosotros">Equipo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Comunidad</h5>
+        <ul role="list">
+          <li><a href="https://www.instagram.com/studiosync.co" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/company/studiosync-co" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/studiosync-co" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 StudioSync &middot; Felipe Nuñez &amp; Jorge Leyes &middot; Universidad del Valle, Seccional Zarzal</p>
+      <div class="footer-socials">
+        <a class="social-pill" href="https://www.instagram.com/studiosync.co" target="_blank" rel="noopener">📸 Instagram</a>
+        <a class="social-pill" href="https://www.linkedin.com/company/studiosync-co" target="_blank" rel="noopener">💼 LinkedIn</a>
+        <a class="social-pill" href="https://github.com/studiosync-co" target="_blank" rel="noopener">🐙 GitHub</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
