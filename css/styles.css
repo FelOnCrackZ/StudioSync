@@ -855,3 +855,32 @@ footer {
   .contact-form { padding: 24px 20px; }
   .price-card   { padding: 32px 24px; }
 }
+
+/* ── Mobile fix (480px) ─────────────────────────────────────── */
+@media (max-width: 480px) {
+  body { overflow-x: hidden; }
+  .container { padding: 0 18px; }
+
+  .hero-title {
+    font-size: 2.4rem;
+    letter-spacing: -0.01em;
+    word-break: break-word;
+  }
+  #hero { padding: 100px 0 60px; }
+  .hero-desc { font-size: 0.95rem; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { text-align: center; justify-content: center; }
+  .hero-stats { flex-wrap: wrap; gap: 20px; }
+  .hero-stat-val { font-size: 1.3rem; }
+
+  #producto, #nosotros, #precios, #contacto { padding: 70px 0; }
+  .section-title { font-size: 1.8rem; }
+  .features-header { margin-bottom: 48px; }
+
+  .contact-form { padding: 24px 18px; }
+  .price-card   { padding: 28px 20px; }
+  .price-number { font-size: 2.8rem; }
+  .feature-card { padding: 28px 22px; }
+  .footer-socials { flex-wrap: wrap; justify-content: center; }
+  .mockup-body { font-size: 0.75rem; }
+}
